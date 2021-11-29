@@ -1,0 +1,70 @@
+import time
+#I've imported time so that you can see whats happening when it runs
+#Any print statements are just explanation, apart from the last two
+
+print()
+pattern = input("Enter a string of 1s and 0s")
+
+time.sleep(1.5)
+print("setting i to 0")
+print()
+i = 0
+time.sleep(1)
+print("setting count to 1")
+print()
+count = 1
+time.sleep(1)
+
+
+time.sleep(2)
+print("LEN(pattern) - 1 = ", len(pattern) - 1)
+print()
+time.sleep(3)
+
+while i < len(pattern) - 1:
+  print("i is equal to", i, "and LEN(pattern) - 1 is equal to", len(pattern) - 1)
+  print()
+  time.sleep(3)
+  print("Therefore i < LEN(pattern)")
+  time.sleep(3)
+  print()
+
+  print("pattern[i] =", str(pattern[i]) + ", pattern[i+1] =", pattern[i+1])
+  time.sleep(3)
+  print()
+
+  if pattern[i] == pattern[i + 1]:
+    print("They are the same so i will increase count by 1")
+    count = count + 1
+    print("count is now", count)
+    print()
+
+  else:
+    print("They are different so I will output count")
+    print(count)
+
+    time.sleep(3)
+    print()
+    print("then the current number in the pattern")
+    print(pattern[i])
+    print()
+
+
+  time.sleep(3)
+  print("increasing i by 1")
+  i += 1
+  time.sleep(3)
+  print()
+  print("i is now", i)
+  print()
+  time.sleep(3)
+
+print("outputting count for the last time")
+time.sleep(3)
+print(count)
+
+print("Outputting pattern[i]")
+print(pattern[i])
+
+time.sleep(3)
+print("pretend there wasn't a bunch of print statements before this and you would have the compressed thing")
